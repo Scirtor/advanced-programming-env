@@ -8,6 +8,7 @@ import task_3_numbers_play as numbers_play
 import task_4_sum_of_nums_in_range as sum_nums
 import task_5_number_akinator as number_akinator
 import task_6_dumb_calculator as calculator
+import task_8_its_been_so_looooong as long_task
 
 def main():
     print("Welcome to Assignment 1!")
@@ -18,6 +19,7 @@ def main():
           4. Sum of Numbers in Range
           5. Guess the Number
           6. Dumb Calculator
+          8. It's Been So Loooong Words
           """)
     choice = input("Enter here:")
     match choice:
@@ -53,6 +55,8 @@ def main():
                 print("Invalid input. Please enter a valid number.")
         case "6":
             calculator.calculator()
+        case "8":
+            long_task.rewrite_in_long()
 
         case _:
             print("Invalid choice. We will exit the program.")
