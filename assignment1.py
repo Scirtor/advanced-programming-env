@@ -9,6 +9,7 @@ import task_4_sum_of_nums_in_range as sum_nums
 import task_5_number_akinator as number_akinator
 import task_6_dumb_calculator as calculator
 import task_8_its_been_so_looooong as long_task
+import task_9_lucky_ticket as lucky_ticket
 
 def main():
     print("Welcome to Assignment 1!")
@@ -20,6 +21,7 @@ def main():
           5. Guess the Number
           6. Dumb Calculator
           8. It's Been So Loooong Words
+          9. Lucky Ticket
           """)
     choice = input("Enter here:")
     match choice:
@@ -57,7 +59,8 @@ def main():
             calculator.calculator()
         case "8":
             long_task.rewrite_in_long()
-
+        case "9":
+            lucky_ticket.lucky_ticket()
         case _:
             print("Invalid choice. We will exit the program.")
 
