@@ -8,4 +8,7 @@ def are_you_lucky(ticket_number):
     sum_first_half = sum(int(digit) for digit in first_half)
     sum_second_half = sum(int(digit) for digit in second_half)
     
-    return sum_first_half == sum_second_half
+    if sum_first_half == sum_second_half:
+        return "You have a lucky ticket!"
+    else:
+        return "Unfortunately, your ticket is not lucky."

@@ -60,7 +60,9 @@ def main():
         case "8":
             long_task.rewrite_in_long()
         case "9":
-            lucky_ticket.are_you_lucky()
+            Ur_ticket = input("Enter your 6-digit ticket number: ")
+            print("Are you lucky?")
+            print(lucky_ticket.are_you_lucky(Ur_ticket))
         case _:
             print("Invalid choice. We will exit the program.")
 
