@@ -15,6 +15,8 @@ def calculator():
     if Second_number.is_integer():
         Second_number = int(Second_number)
 
+    
+
     if Operation == "+":
         Result = First_number + Second_number
         print(f"The result of {First_number} + {Second_number} is {Result}")
@@ -25,6 +27,7 @@ def calculator():
         Result = First_number * Second_number
         print(f"The result of {First_number} * {Second_number} is {Result}")
     elif Operation == "/":
+        print("Task 7 is checking for division by 0. Try to divide by 0.")
         if Second_number != 0:
             Result = First_number / Second_number
             print(f"The result of {First_number} / {Second_number} is {Result}")
