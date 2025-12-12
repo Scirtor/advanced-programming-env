@@ -7,6 +7,7 @@ import task_2_salary_range as salary_range
 import task_3_numbers_play as numbers_play
 import task_4_sum_of_nums_in_range as sum_nums
 import task_5_number_akinator as number_akinator
+import task_6_dumb_calculator as calculator
 
 def main():
     print("Welcome to Assignment 1!")
@@ -16,6 +17,7 @@ def main():
           3. Real Number Play
           4. Sum of Numbers in Range
           5. Guess the Number
+          6. Dumb Calculator
           """)
     choice = input("Enter here:")
     match choice:
@@ -49,6 +51,8 @@ def main():
                 print(f"The number you initially thought of is approximately: {guessed_number}")
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
+        case "6":
+            calculator.calculator()
 
         case _:
             print("Invalid choice. We will exit the program.")
