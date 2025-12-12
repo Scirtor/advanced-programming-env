@@ -8,11 +8,12 @@ Welcome to the Advanced Programming Environment repository. This guide covers se
 - Git installed and configured
 - A code editor or IDE of your choice
 - Command line/terminal access
+- To initialize First Assignment run 'python ./assignment1.py'
 
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Scirtor/advanced-programming-env
 cd advanced-programming-env
 ```
 

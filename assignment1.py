@@ -6,6 +6,7 @@ import task_1_greeting as greeting
 import task_2_salary_range as salary_range
 import task_3_numbers_play as numbers_play
 import task_4_sum_of_nums_in_range as sum_nums
+import task_5_number_akinator as number_akinator
 
 def main():
     print("Welcome to Assignment 1!")
@@ -14,6 +15,7 @@ def main():
           2. Salary Range Calculation
           3. Real Number Play
           4. Sum of Numbers in Range
+          5. Guess the Number
           """)
     choice = input("Enter here:")
     match choice:
@@ -38,6 +40,16 @@ def main():
             int_number = int(number)
             result = sum_nums.sum_of_nums(int_number)
             print(f"The sum of numbers from 1 to {int_number} is: {result}")
+        case "5":
+            print("Please guess the number, then multiply it by 5, add 8, and multiply the result by 2.")
+            number = input("Enter the resulted number from the formula: ")
+            try:
+                float_number = float(number)
+                guessed_number = number_akinator.find_num(float_number)
+                print(f"The number you initially thought of is approximately: {guessed_number}")
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
         case _:
             print("Invalid choice. We will exit the program.")
 
