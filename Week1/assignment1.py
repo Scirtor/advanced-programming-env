@@ -1,6 +1,6 @@
 # This is the main file for Assignment 1
 # Here we will add the necessary code to run the assignment tasks
-# 
+# Made by Bekmurat Nurzhan
 
 import task_1_greeting as greeting
 import task_2_salary_range as salary_range
