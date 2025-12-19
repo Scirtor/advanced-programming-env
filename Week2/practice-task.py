@@ -39,47 +39,47 @@ def main():
             ptask1.ru_e_counter()
         case "2":
             string = input("Please enter text: ")
-            ptask2.replace_colons(string)
+            print(f"Replaced colons: {ptask2.replace_colons(string)}")
         case "3":
             string = input("Please enter text: ")
-            ptask3.remove_dots(string)
+            print(f"Removed dots: {ptask3.remove_dots(string)}")
         case "4":
             string = input("Please enter text: ")
-            ptask4.replace_a_with_o(string)
+            print(f"Replaced a with o: {ptask4.replace_a_with_o(string)}")
         case "5":
             string = input("Please enter text: ")
-            ptask5.to_lowercase(string)
+            print(f"To lowercase: {ptask5.to_lowercase(string)}")
         case "6":
             string = input("Please enter text: ")
-            ptask6.remove_a(string)
+            print(f"Removed a: {ptask6.remove_a(string)}")
         case "7":
             string = input("Please enter text: ")
-            ptask7.replace_n_first_half(string)
+            print(f"Replaced n first half: {ptask7.replace_n_first_half(string)}")
         case "8":
             string = input("Please enter text: ")
-            ptask8.count_words(string)
+            print(f"Count words: {ptask8.count_words(string)}")
         case "9":
             string = input("Please enter text: ")
             word = input("Please enter word: ")
-            ptask9.word_count(string, word)
+            print(f"Word count: {ptask9.word_count(string, word)}")
         case "10":
             string = input("Please enter text: ")
-            ptask10.capitalize_words(string)
+            print(f"Capitalized words: {ptask10.capitalize_words(string)}")
         case "11":
             string = input("Please enter text: ")
-            ptask11.longest_n_and_replace_exclamations(string)
+            print(f"Longest n and replace exclamations: {ptask11.longest_n_and_replace_exclamations(string)}")
         case "12":
             string = input("Please enter text: ")
-            ptask12.words_ending_with_I(string)
+            print(f"Words ending with I: {ptask12.words_ending_with_I(string)}")
         case "13":
             string = input("Please enter text: ")
-            ptask13.inside_brackets(string)
+            print(f"Inside brackets: {ptask13.inside_brackets(string)}")
         case "14":
             string = input("Please enter text: ")
-            ptask14.words_a_or_i(string)
+            print(f"Words a or i: {ptask14.words_a_or_i(string)}")
         case "15":
             string = input("Please enter text: ")
-            ptask15.count_t(string)
+            print(f"Count t: {ptask15.count_t(string)}")    
         case _:
             print("Invalid choice. Please enter a valid choice.")
 
