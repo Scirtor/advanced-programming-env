@@ -6,8 +6,8 @@ import a2_task3 as task3
 import a2_task4 as task4
 import a2_task5 as task5
 import a2_task6 as task6
-# import a2_task7 as task7
-# import a2_task8 as task8
+import a2_task7 as task7
+import a2_task8 as task8
 
 def main():
     print("Welcome to Assignment 2!")
