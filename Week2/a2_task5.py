@@ -1,0 +1,1 @@
+def license_plate_vasya():

@@ -1,0 +1,2 @@
+def communistic_list():
+    
