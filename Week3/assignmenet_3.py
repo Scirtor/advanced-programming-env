@@ -12,7 +12,7 @@ def main():
 
     choice = int(input("""Enter your choice: 
                        1. Area of the shape        | Sum and mean of the arrays
-                       2. Hexagons are bestagons   | Area of the triangle
+                       2. Hexagons are bestagons   | Area of the Rectangles
                        3. Right Triangles(really?) | Alphabetically correct
                        4. Fraction dividor         | How many points in the circle
                        5. Fraction subtractor      | All the possible divisors ever
@@ -34,7 +34,7 @@ def main():
         case 2:
             subchoice = int(input("""Which one exactly:
                                   1. Hexagons are bestagons
-                                  2. Area of the triangle
+                                  2. Area of the rectangles
                                     \n"""))
             match subchoice:
                 case 1:
