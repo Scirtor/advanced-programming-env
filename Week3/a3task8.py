@@ -1,3 +1,5 @@
+import array
+
 
 def natural_dividable():
     n = int(input("Enter a number: "))
@@ -11,5 +13,12 @@ def natural_dividable():
 
 
 def array_repplacement():
-    
-    return
+    m = int(input("Enter the size of the array: "))
+    arr = array.array('i', [])
+    for _ in range(m):
+        element = int(input("Enter an element: "))
+        arr.append(element)
+    print(f"The original array is: {arr}")
+    arr[0], arr[-1] = arr[-1], arr[0]
+    print(f"The array after swapping the first and last elements: {arr}")
+    return 
