@@ -12,7 +12,7 @@ def natural_dividable():
     return 
 
 
-def array_repplacement():
+def array_replacement():
     m = int(input("Enter the size of the array: "))
     arr = array.array('i', [])
     for _ in range(m):

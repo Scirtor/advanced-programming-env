@@ -25,9 +25,10 @@ def kindergarten_equation():
         elif left[1] == "+":
             print(int(right) - int(left[0]))
         else: print("Error: Couldn't parse the equation")
-    else: # case left[0] == "x"
+    elif left[0] == "x": # case left[0] == "x"
         if left[1] == "-":
-            print(int(left[0]) + int(right))
+            print(int(left[2]) + int(right))
         elif left[1] == "+":
-            print(int(right) - int(left[0]))
-        else: print("Error: Couldn't parse the equation")
+            print(int(right) - int(left[2]))
+    else: print("Error: Couldn't parse the equation")
+    

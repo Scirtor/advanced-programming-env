@@ -3,23 +3,23 @@ from cmath import sqrt
 
 def area_of_shape():
     type_of_shape = input("Enter the type of shape: ").lower()
-    if type_of_shape is "triangle":
+    if type_of_shape == "triangle":
         first_edge = int(input("Enter the length of the first edge: "))
         second_edge = int(input("Enter the length of the second edge: "))
         third_edge = int(input("Enter the length of the third edge: "))
         semiper = (first_edge + second_edge + third_edge) / 2
         print(f"The area of the triangle with edges {first_edge}, {second_edge}, and {third_edge} is:{sqrt(semiper * (semiper - first_edge) * (semiper - second_edge) * (semiper - third_edge))}")
-    elif type_of_shape is "circle":
+    elif type_of_shape == "circle":
         rad = int(input("Enter the radius of the circle: "))
-        print(f"The area of the circle is: {3.14159 * rad * rad}")  
-    elif type_of_shape is "rectangle":
+        print(f"The area of the circle ==: {3.14159 * rad * rad}")  
+    elif type_of_shape == "rectangle":
         length = int(input("Enter the length of the rectangle: "))
         width = int(input("Enter the width of the rectangle: "))
-        print(f"The area of the rectangle is: {length * width}")
-    elif type_of_shape is "square":
+        print(f"The area of the rectangle ==: {length * width}")
+    elif type_of_shape == "square":
         side = int(input("Enter the length of the side of the square: "))
-        print(f"The area of the square is: {side * side}")
-    elif type_of_shape is "parallelogram":
+        print(f"The area of the square ==: {side * side}")
+    elif type_of_shape == "parallelogram":
         base = int(input("Enter the base length of the parallelogram: "))
         height = int(input("Enter the height of the parallelogram: "))
         print(f"The area of the parallelogram is: {base * height}")

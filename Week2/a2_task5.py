@@ -3,7 +3,7 @@ def license_plate_vasya():
     licenses = [
                 ]
     for _ in range(licenses_num):
-        licenses.append(input("Enter license plate: ").upper())
+        licenses.append(input("Enter license plate: "))
     
     for i in range(licenses_num):
         letters_in = 0
