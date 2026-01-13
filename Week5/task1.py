@@ -2,8 +2,6 @@ import string
 from collections import Counter
 
 
-
-
 def run():
     try:
         with open("text.txt", "r", encoding="utf-8") as file:
