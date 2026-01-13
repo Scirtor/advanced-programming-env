@@ -1,10 +1,13 @@
 import string
 from collections import Counter
+import os
 
 
 def run():
     try:
-        with open("text.txt", "r", encoding="utf-8") as file:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(base_dir, "text.txt")
+        with open(file_path , "r", encoding="utf-8") as file:
             lines = file.readlines()
 
 
@@ -17,7 +20,7 @@ def run():
         word_freq = Counter(words)
 
 
-        with open("analysis.txt", "w", encoding="utf-8") as out:
+        with open("./Week5/analysis.txt", "w", encoding="utf-8") as out:
             out.write(f"Total lines: {len(lines)}\n")
             out.write(f"Total words: {len(words)}\n")
             out.write("Word frequency:\n")

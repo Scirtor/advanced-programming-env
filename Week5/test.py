@@ -1,27 +1,20 @@
-import string
-from collections import Counter
+import json
 import os
 
+
 base_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(base_dir, "text.txt")
-
+file_path = os.path.join(base_dir, "students.json")
 with open(file_path, "r", encoding="utf-8") as file:
-            lines = file.readlines()
+            students = json.load(file)
 
 
-text = "".join(lines).lower()
-translator = str.maketrans("", "", string.punctuation)
-text = text.translate(translator)
+for student in students:
+            grades = student.get("grades", [])
+            avg = sum(grades) / len(grades) if grades else 0
+            student["average"] = round(avg, 2)
 
 
-words = text.split()
-word_freq = Counter(words)
+with open(os.path.join(base_dir, "students_with_average.json"), "w", encoding="utf-8") as file:
+    json.dump(students, file, indent=4)
 
-with open("./Week5/analysis.txt", "w", encoding="utf-8") as out:
-            out.write(f"Total lines: {len(lines)}\n")
-            out.write(f"Total words: {len(words)}\n")
-            out.write("Word frequency:\n")
-            for word, count in word_freq.items():
-                out.write(f"{word}: {count}\n")     
-
-print("Analysis saved to analysis.txt")
+print("New file created: students_with_average.json")

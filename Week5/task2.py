@@ -1,8 +1,11 @@
 import json
+import os
 
 def run():
     try:
-        with open("students.json", "r", encoding="utf-8") as file:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(base_dir, "students.json")
+        with open(file_path, "r", encoding="utf-8") as file:
             students = json.load(file)
 
 
