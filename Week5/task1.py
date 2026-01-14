@@ -20,7 +20,7 @@ def run():
         word_freq = Counter(words)
 
 
-        with open("./Week5/analysis.txt", "w", encoding="utf-8") as out:
+        with open(os.path.join(base_dir, "Week5", "analysis.txt"), "w", encoding="utf-8") as out:
             out.write(f"Total lines: {len(lines)}\n")
             out.write(f"Total words: {len(words)}\n")
             out.write("Word frequency:\n")
