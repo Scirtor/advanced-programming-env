@@ -1,0 +1,1 @@
+https://github.com/Scirtor/django-project

@@ -1,0 +1,12 @@
+__pycache__/
+Week1/__pycache__
+Week2/__pycache__
+Week3/__pycache__
+Week4/__pycache__
+Week5/__pycache__
+midterm/__pycache__
+__pycache__/
+*.pyc
+*.pyo
+.venv
+

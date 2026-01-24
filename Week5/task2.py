@@ -12,7 +12,7 @@ def run():
         for student in students:
             grades = student.get("grades", [])
             avg = sum(grades) / len(grades) if grades else 0
-            student["average"] = round(avg, 2)
+            student["average"] = round(avg)
 
         with open(os.path.join(base_dir, "students_with_average.json"), "w", encoding="utf-8") as out:
             json.dump(students, out, indent=4)
